@@ -9,9 +9,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     RadarChart * widget = new RadarChart(this);
         QList<RadarData> datas;
-        datas<<RadarData("Jan",10)<<RadarData("Feb",30)<<RadarData("Mar",50)<<RadarData("Apr",90)<<RadarData("May",20);
+        datas<<RadarData("成控度",10)<<RadarData("贡献度",30)<<RadarData("承受度",50)<<RadarData("普适度",40)<<RadarData("体验度",20);
         widget->setDatas(datas);
-        widget->setAxisRange(0,100);
+        widget->setAxisRange(0,50);
         this->setCentralWidget(widget);
         this->resize(600,600);
 }

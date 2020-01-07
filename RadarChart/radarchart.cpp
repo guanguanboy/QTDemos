@@ -35,7 +35,7 @@ void RadarChart::init()
     m_AngularCount = 0;
     m_titleFont = QFont("Arial",12,QFont::Bold);
     m_titleColor = Qt::black;
-    m_tickCount = 5;
+    m_tickCount = 3;  //表示的是横隔线的数量
     m_Axis_min = 0;
     m_Axis_max = 10;
     m_AngularLineColor = Qt::black;
